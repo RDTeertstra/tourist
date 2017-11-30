@@ -1,7 +1,16 @@
 $(() => {
 
   var ac = new google.maps.places.Autocomplete(document.getElementById('autocomplete'));
-  google.maps.
+  google.maps.event.addListener(ac, 'place_changed', function(){
+    var place = ac.getPlace();
+    console.log(place.formatted_adress);
+    console.log(place.url);
+    console.log(place.geometry.location);
+  });
+
+  var ac = new google.maps.places.Autocomplete(document.getElementById('autocomplete'),{
+    types: ['establishment']
+  });
 
 /*/
   $("#userinput2").on("click", () => {
