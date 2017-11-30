@@ -141,14 +141,14 @@ h3 {
 
 footer{
   margin-top:100px;
-  min-height: 350px;
+  min-height: 150px;
   color: black;
   min-width:100vw;
 }
 
 footer #footer-nav {
     background-color: white; opacity: 0.6;
-    min-height: 350px;
+    min-height: 150px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
