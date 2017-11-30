@@ -125,18 +125,18 @@ h1 {
 }
 
 #fadeIn  {
-font-family: 'Limelight';font-size: 22px;
+font-family: 'Poppins';font-size: 22px;
 }
 
 body  {
     background-image: url("city.jpg");;
 }
 h1 {
-    font-family: 'Limelight';font-size: 30px; font-color:white; !important;
+    font-family: 'Poppins';font-size: 30px; font-color:white; !important;
 
 }
 h3 {
-    font-family: 'Limelight';font-size: 22px; color: white;
+    font-family: 'Poppins';font-size: 22px; color: white;
 }
 
 footer{
@@ -154,16 +154,16 @@ footer #footer-nav {
 }
 
 footer ul li {
-    font-size: 20px;
+    font-size: 13px;
     line-height: 35px;
     color:black;
-    font-family: "Palatino Linotype", Palatino, serif;
+    font-family: "Poppins", Palatino, serif;
 }
 
 footer #footer-nav a {
     color: black;
     font-weight: 500;
-    font-family: "Palatino Linotype", Palatino, serif;
+    font-family: "Poppins", Palatino, serif;
 }
 p {
     font-size: 22px;
