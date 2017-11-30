@@ -130,6 +130,7 @@ footer{
   margin-top:100px;
   min-height: 350px;
   color: white;
+  min-width:100vw;
 }
 
 footer #footer-nav {
@@ -137,7 +138,6 @@ footer #footer-nav {
     min-height: 350px;
     padding-top: 30px;
     padding-bottom: 30px;
-    width:100%;
 }
 
 footer ul li {
