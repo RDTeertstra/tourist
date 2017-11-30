@@ -116,10 +116,10 @@ font-family: 'Limelight';font-size: 22px;
 }
 
 body  {
-    background-image: url("citypic.jpg");opacity:0.7;;
+    background-image: url("city.jpg");;
 }
 h1 {
-    font-family: 'Limelight';font-size: 35px !important;
+    font-family: 'Limelight';font-size: 30px; font-color:white; !important;
 
 }
 h3 {
@@ -129,19 +129,19 @@ h3 {
 footer{
   margin-top:100px;
   min-height: 350px;
-  color: white;
+  color: black;
   min-width:100vw;
 }
 
 footer #footer-nav {
-    background-color: #6B8E23;
+    background-color: white; opacity: 0.6;
     min-height: 350px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 footer ul li {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 35px;
     color:black;
     font-family: "Palatino Linotype", Palatino, serif;
@@ -151,4 +151,7 @@ footer #footer-nav a {
     color: black;
     font-weight: 500;
     font-family: "Palatino Linotype", Palatino, serif;
+}
+p {
+    font-size: 22px;
 }
