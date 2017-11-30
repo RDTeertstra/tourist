@@ -5,7 +5,7 @@ $(() => {
     method: 'GET',
     contentType: 'application/json; charset=UTF-8',
     data: {
-      limit: 25,
+      limit: 5,
     },
     success: function handleResults(response_body){
       response_body.data.forEach(function(item) {
@@ -17,8 +17,6 @@ $(() => {
       })
     }
   });
-
-
 
   var ac = new google.maps.places.Autocomplete(document.getElementById('autocomplete'));
   google.maps.event.addListener(ac, 'place_changed', function(){
