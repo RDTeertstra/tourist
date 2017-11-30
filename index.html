@@ -26,7 +26,7 @@
         </nav>
 
         <img class="darken" src="darken.png">
-        
+
         <div id="bg_vide" align="center">
             <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
                 <source src="australia.mp4" type="video/mp4">
@@ -37,17 +37,24 @@
             <div id="title">
                 <h1>TOURIST GUIDE</h1>
             </div>
-                        
+
             <div id="searchbar" class="input-group">
                 <input type="text" class="form-control" placeholder="search a location" aria-describedby="basic-addon2">
                 <span class="input-group-addon" ><a href="page2.html">Search</a></span>
             </div>
         </div>
 
-
-
-
-
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script>
+          function activatePlacesSearch() {
+            var input = document.getElementById('autocomplete');
+            var autocompletes = new google.maps.places.Autocomplete(input);
+          }
+        </script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8kYERBj6C0BKhf80hpgKDCOVqVllOP0&libraries=places&callback=activatePlacesSearch"></script>
+        <script src="tourist.js"></script>
 
     </body>
 </html>
