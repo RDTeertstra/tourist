@@ -1,10 +1,13 @@
 $(() => {
 
-  $("#userinput").on("click", () => {
-    $(".User_city").html("I love pizza that's why I'm fat")
+/*/
+  $("#userinput2").on("click", () => {
+    $("#titlebutton").html("I love pizza that's why I'm fat")
   });
 
-});
+  $("#whatever1").on("click", () => {
+    $("#spa1").html("I love pizza that's why I'm fat")
+  });
 
 $.ajax({
   url: 'https://maps.googleapis.com/maps/api/place/textsearch/json?query=Berlin&key=AIzaSyCVV-xcY5R-Uw0vgXyZviRxBLeGBxI1gBw',
@@ -25,3 +28,4 @@ $.ajax({
     })
   }
 });
+/*/
