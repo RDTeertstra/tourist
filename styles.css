@@ -19,11 +19,15 @@ a {
     padding-right: 150px !important;
 }
 
+.navbar .navbar-toggler-icon {
+    background-image: url("icon.png") !important;
+}
+
 video {
-    position: fixed;
+    position: fixed !important;
     z-index: 0;
-    min-height: 110vh !important;
-    max-height: 110vh !important;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
     margin: 0;
     filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
     filter: blur(0px);    
