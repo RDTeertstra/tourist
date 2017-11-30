@@ -4,7 +4,7 @@
 
     <head>
         <meta charset = "utf-8"/>
-        <meta name="tourist guide" content="Turing society web dev bootcamp website">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
         <title>Tourist guide undecided country</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -41,15 +41,13 @@
             <img src="https://images.unsplash.com/photo-1503022932596-500eb8cca2d8?auto=format&fit=crop&w=700&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
         </div>
 
-
-
         <div id="items">
             <h2 class="changetitle" id="titlebutton">Chosen_Item</h2>
 
             <div class="col-sm itemcards ">
                 <h3 class="place_name">Name_of_place</h3>
                 </br>
-                <p class="place_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="place_description" id="restaurantdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             </div>
             <div class="col-sm itemcards ">col-sm</div>
             <div class="col-sm itemcards ">col-sm</div>
@@ -61,6 +59,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8kYERBj6C0BKhf80hpgKDCOVqVllOP0&libraries=places&callback=activatePlacesSearch"></script>
+        <script src="tourist.js"></script>
     </body>
 
 </html>
