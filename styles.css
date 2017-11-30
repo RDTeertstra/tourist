@@ -1,0 +1,137 @@
+* {
+    font-family: 'Poppins'; letter-spacing: 3px;
+    margin-top: 0;
+    position: relative;
+}
+
+a {
+    color: white;
+    text-decoration-style: none;
+}
+
+.navbar {
+    color: white !important;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    z-index: 10;
+    width: 100%;
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+}
+
+video {
+    position: fixed;
+    z-index: 0;
+    min-height: 110vh !important;
+    max-height: 110vh !important;
+    margin: 0;
+    filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");
+    filter: blur(0px);    
+    margin-left: -50%;
+    transform: scale(1.0);    
+}
+
+.darken {
+    position: fixed;
+    width: 50%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+#s1 {
+    position: absolute;
+    z-index: 3;
+    margin-left: 150px;
+    margin-top: 350px;
+}
+
+h1 {
+    color: white;
+    position: relative;    
+    letter-spacing: 12px;
+    text-transform: uppercase;
+}
+
+#searchbar {
+    position: relative;    
+    width: 600px;
+    margin-top: 20px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 0px;
+}
+
+.input-group-addon {
+    border-radius: 0px;
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+.backgroundimg {
+    position: fixed !important;
+    z-index: 0;
+    width: 100vw !important;
+    height: 700px !important;
+    overflow: hidden;
+}
+
+.backgroundimg img {
+    width: 100vw !important;
+    overflow: hidden;
+}
+
+#s2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 300px;
+    z-index: 3;
+}
+
+#buttons {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%);
+    z-index: 4;
+}
+
+.btn {
+    width: 200px;
+    margin: 10px;
+    border-radius: 0px;
+    border: none;
+    background-color: rgba(26, 26, 26, 0.9);
+    color: white;
+}
+
+#items {
+    position: absolute;
+    padding: 150px;
+    margin-top: 700px;
+    background-color: white;
+    width: 100vw;
+    color: black !important;
+}
+
+#items h2 {
+    color: black !important;
+    margin-bottom: 150px;
+}
+
+.itemcards {
+    color: black !important;
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
