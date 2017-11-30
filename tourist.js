@@ -1,5 +1,8 @@
 $(() => {
 
+  var ac = new google.maps.places.Autocomplete(document.getElementById('autocomplete'));
+  google.maps.
+
 /*/
   $("#userinput2").on("click", () => {
     $("#titlebutton").html("I love pizza that's why I'm fat")
