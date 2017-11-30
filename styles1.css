@@ -94,6 +94,7 @@ h1 {
 }
 #nav{
   position: relative;
+  z-index:1001; /*navbar on top layer*/
 }
 #div0{
   margin-top:30px;
@@ -129,7 +130,8 @@ font-family: 'Poppins';font-size: 22px;
 }
 
 body  {
-    background-image: url("city.jpg");;
+    background-image: url("city.jpg");
+    background-attachment: fixed;
 }
 h1 {
     font-family: 'Poppins';font-size: 30px; font-color:white; !important;
