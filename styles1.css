@@ -10,13 +10,17 @@ a {
 }
 
 .navbar {
+    color: white !important;
     position: fixed;
-    background-color: rgb(236, 236, 236) !important;
-    color: black;
+    background-color: rgba(0, 0, 0, 0.3) !important;
     z-index: 10;
     width: 100%;
     padding-left: 150px !important;
     padding-right: 150px !important;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("icon.png") !important;
 }
 
 video {
@@ -85,6 +89,15 @@ h1 {
     z-index: 3;
 }
 
+#s3{
+  margin-top:60px;
+}
+#nav{
+  position: relative;
+}
+#div0{
+  margin-top:30px;
+}
 #buttons {
     text-align: center;
     width: 50%;
