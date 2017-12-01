@@ -1,7 +1,7 @@
 $(() => {
-
+  var desetination="destination"
   $("#userinput").on("click", () => {
-    var destination = document.getElementById("autocomplete");
+    destination = document.getElementById("autocomplete").value;
     console.log(destination)
 
   });
