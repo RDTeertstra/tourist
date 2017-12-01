@@ -1,9 +1,10 @@
 $(() => {
-  var desetination="destination"
-  $("#userinput").on("click", () => {
-    destination = document.getElementById("autocomplete").value;
-    console.log(destination)
 
+
+  $("#userinput").on("click", () => {
+    var usercity = document.getElementById("des");
+    var destination = document.getElementById("autocomplete").value;
+    usercity.insertAdjacentHTML('beforeend', destination);
   });
 
   $(".form-check-input").click(function(){
