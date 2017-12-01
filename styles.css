@@ -23,6 +23,21 @@ a {
     background-image: url("icon.png") !important;
 }
 
+#index {
+    z-index: 1;
+    position: relative;
+    height: 900px;
+}
+
+#page2 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 900px;
+    z-index: 2;
+    margin-top: ;
+}
+
 video {
     position: fixed !important;
     z-index: 0;
@@ -75,24 +90,26 @@ h1 {
 }
 
 .backgroundimg {
-    position: fixed !important;
+    position: absolute !important;
     z-index: 0;
     width: 100vw !important;
-    height: 700px !important;
+    height: 100vh !important;
     overflow: hidden;
 }
 
 .backgroundimg img {
     width: 100vw !important;
-    overflow: hidden;
+    height: 100%;
+    z-index: 3;
 }
 
 #s2 {
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 100%;
-    height: 100%;
-    margin-top: 300px;
+    height: 900px;
+    padding-top: 300px;
+    margin-bottom: 0px;
     z-index: 3;
 }
 
@@ -117,7 +134,7 @@ h1 {
 #items {
     position: absolute;
     padding: 150px;
-    margin-top: 700px;
+    margin-top: 0px;
     background-color: white;
     width: 100vw;
     color: black !important;
