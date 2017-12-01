@@ -69,12 +69,12 @@ $(() => {
         data: {
           query: "paris",
           key: "AIzaSyCWJZA2SqBF8AFk_GpwBtj3vTbNnlEUMsk",
-          types: "bar",
+          types: "bars",
         },
         success: function (data) {
           var header = document.getElementById("titlebutton");
-          var htmlString5 = "Bars"
-          header.insertAdjacenHTML('beforeend', htmlString5);
+          var htmlString7 = "Bars"
+          header.insertAdjacentHTML('beforeend', htmlString7);
 
           var restaurants1 = document.getElementById("restaurantname1");
           var htmlString1 = data.results[0].name;
@@ -115,7 +115,7 @@ $(() => {
         })
       });
 
-      $("#monumentbutton").on("click", () => {
+      $("#clubbutton").on("click", () => {
         $.ajax({
           url: 'https://maps.googleapis.com/maps/api/place/textsearch/json?',
           method: 'GET',
@@ -123,12 +123,12 @@ $(() => {
           data: {
             query: "paris",
             key: "AIzaSyCWJZA2SqBF8AFk_GpwBtj3vTbNnlEUMsk",
-            types: "club",
+            types: "clubs",
           },
           success: function (data) {
             var header = document.getElementById("titlebutton");
-            var htmlString5 = "Clubs"
-            header.insertAdjacentHTML('beforeend', htmlString5);
+            var htmlString7 = "Clubs"
+            header.insertAdjacentHTML('beforeend', htmlString7);
 
             var restaurants1 = document.getElementById("restaurantname1");
             var htmlString1 = data.results[0].name;
