@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset = "utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <title>Tourist guide undecided country</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="icon" type=img/png href="https://cdn4.iconfinder.com/data/icons/travel-2/500/earth_globe_map_flight_fly_base_coordinate_coordinates_direction_find_travel-512.png"/>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-toggleable-md bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">TS Tourist Guide</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">Search</a>
+                    <a class="nav-item nav-link" href="page2.html">Activities</a>
+                    <a class="nav-item nav-link" href="members.html">Members</a>
+                    <a class="nav-item nav-link" href="contactus.html">Sign up</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="s2">
+            <h1 class="User_city">What are you looking for?</h1>
+            <div id="buttons">
+                <input class="btn btn-primary" id="restaurantbutton" type="button" value="Restaurants">
+                <input class="btn btn-primary" id="cafebutton" type="submit" value="Cafés">
+                <input class="btn btn-primary" id="clubbutton" type="reset" value="Clubs">
+            </div>
+        </div>
+
+        <div class="backgroundimg">
+            <img src="https://images.unsplash.com/photo-1503022932596-500eb8cca2d8?auto=format&fit=crop&w=700&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+        </div>
+
+        <div id="items">
+            <h2 class="changetitle" id="titlebutton"></h2>
+
+            <div class="col-sm itemcards ">
+                <h3 class="place_name" id="name1"></h3>
+                </br>
+                <p class="place_description" id="description1"></p>
+            </div>
+
+            <div class="col-sm itemcards ">
+              <h3 class="place_name" id="name2"></h3>
+              </br>
+              <p class="place_description" id="description2"></p>
+            </div>
+            <div class="col-sm itemcards ">
+              <h3 class="place_name" id="name3"></h3>
+              </br>
+              <p class="place_description" id="description3"></p>
+            </div>
+
+            <div class="col-sm itemcards ">
+              <h3 class="place_name" id="name4"></h3>
+              </br>
+              <p class="place_description" id="description4"></p>
+            </div>
+
+        </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8kYERBj6C0BKhf80hpgKDCOVqVllOP0&libraries=places&callback=activatePlacesSearch"></script>
+        <script src="tourist.js"></script>
+    </body>
+
+</html>
