@@ -30,46 +30,46 @@
 
         <div id="index">
             <img class="darken" src="darken.png">
-        
+
             <div id="bg_vide" align="center">
                 <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
                     <source src="australia.mp4" type="video/mp4">
                 </video>
             </div>
-    
+
             <div id="s1">
                 <div id="title">
                     <h1>TOURIST GUIDE</h1>
                 </div>
-    
+
                 <div id="searchbar" class="input-group">
                     <input type="text" class="form-control" name="term" id="autocomplete" placeholder="search location" aria-describedby="basic-addon2" value="" required>
-                    <span class="input-group-addon" id="userinput"><a href="#page2">Search</a></span>
+                    <span class="input-group-addon" id="userinput"><a>Search</a></span>
                 </div>
             </div>
         </div>
 
         <div id="page2">
             <div id="s2">
-                <h1 class="User_city">What are you looking for?</h1>
+                <h1 class="User_city" id="des"></h1>
                 <div id="buttons">
                     <input class="btn btn-primary" id="restaurantbutton" type="button" value="Restaurants">
                     <input class="btn btn-primary" id="cafebutton" type="submit" value="Cafés">
-                    <input class="btn btn-primary" id="hotelbutton" type="reset" value="Hotels">
+                    <input class="btn btn-primary" id="museumbutton" type="reset" value="Museums">
                 </div>
             </div>
-    
 
-    
+
+
             <div id="items">
                 <h2 class="changetitle" id="titlebutton"></h2>
-    
+
                 <div class="col-sm itemcards ">
                     <h3 class="place_name" id="name1"></h3>
                     </br>
                     <p class="place_description" id="description1"></p>
                 </div>
-    
+
                 <div class="col-sm itemcards ">
                     <h3 class="place_name" id="name2"></h3>
                     </br>
@@ -80,7 +80,7 @@
                     </br>
                     <p class="place_description" id="description3"></p>
                 </div>
-    
+
                 <div class="col-sm itemcards ">
                     <h3 class="place_name" id="name4"></h3>
                     </br>
