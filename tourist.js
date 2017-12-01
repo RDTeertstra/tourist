@@ -6,6 +6,11 @@ $(() => {
 
   });
 
+  $(".form-check-input").click(function(){
+    $("#news").append(" <b>Appended text</b>.");
+  });
+
+
 
   $("#restaurantbutton").on("click", () => {
     $.ajax({
