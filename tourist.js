@@ -41,7 +41,7 @@ $(() => {
       contentType: 'application/json; charset=UTF-8',
       data: {
         query: document.getElementById("autocomplete").value,
-        key: "AIzaSyC58JA81ZluYN1WxVelklAOv7lOITKsj5o",
+        key: "AIzaSyCS1XyA0eqP1RAdc8fqD6V2abzqVBnd_Io",
         types: "restaurant",
       },
       success: function (data) {
@@ -95,7 +95,7 @@ $(() => {
         contentType: 'application/json; charset=UTF-8',
         data: {
           query: document.getElementById("autocomplete").value,
-          key: "AIzaSyC58JA81ZluYN1WxVelklAOv7lOITKsj5o",
+          key: "AIzaSyCS1XyA0eqP1RAdc8fqD6V2abzqVBnd_Io",
           types: "cafe",
         },
         success: function (data) {
@@ -149,7 +149,7 @@ $(() => {
           contentType: 'application/json; charset=UTF-8',
           data: {
             query: document.getElementById("autocomplete").value,
-            key: "AIzaSyC58JA81ZluYN1WxVelklAOv7lOITKsj5o",
+            key: "AIzaSyCS1XyA0eqP1RAdc8fqD6V2abzqVBnd_Io",
             types: "museum",
           },
           success: function (data) {
