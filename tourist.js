@@ -115,7 +115,7 @@ $(() => {
         })
       });
 
-      $("#clubbutton").on("click", () => {
+      $("hotelbutton").on("click", () => {
         $.ajax({
           url: 'https://maps.googleapis.com/maps/api/place/textsearch/json?',
           method: 'GET',
@@ -123,48 +123,48 @@ $(() => {
           data: {
             query: "paris",
             key: "AIzaSyC58JA81ZluYN1WxVelklAOv7lOITKsj5o",
-            types: "clubs",
+            types: "hotels",
           },
           success: function (data) {
             var header = document.getElementById("titlebutton");
-            var htmlString12 = "Clubs"
+            var htmlString12 = "Hotels"
             header.insertAdjacentHTML('beforeend', htmlString12);
 
-            var clubs1 = document.getElementById("name1");
+            var hotels1 = document.getElementById("name1");
             var htmlString13 = data.results[0].name;
-            clubs1.insertAdjacentHTML('beforeend', htmlString13);
+            hotels1.insertAdjacentHTML('beforeend', htmlString13);
 
-            var clubsd1 = document.getElementById("description1");
+            var hotelsd1 = document.getElementById("description1");
             var htmlString131 = "";
-              htmlString131 += "<p>This club is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
-            clubsd1.insertAdjacentHTML('beforeend', htmlString131);
+              htmlString131 += "<p>This hotel is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
+            hotelsd1.insertAdjacentHTML('beforeend', htmlString131);
 
-            var clubs2 = document.getElementById("name2");
+            var hotels2 = document.getElementById("name2");
             var htmlString14 = data.results[1].name;
-            clubss2.insertAdjacentHTML('beforeend', htmlString14);
+            hotels2.insertAdjacentHTML('beforeend', htmlString14);
 
-            var clubsd2 = document.getElementById("description2");
+            var hotelsd2 = document.getElementById("description2");
             var htmlString141 = "";
-              htmlString141 += "<p>This club is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
-            clubsd2.insertAdjacentHTML('beforeend', htmlString141);
+              htmlString141 += "<p>This hotel is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
+            hotelsd2.insertAdjacentHTML('beforeend', htmlString141);
 
-            var clubs3 = document.getElementById("name3");
+            var hotels3 = document.getElementById("name3");
             var htmlString15 = data.results[2].name;
-            clubs3.insertAdjacentHTML('beforeend', htmlString15);
+            hotels3.insertAdjacentHTML('beforeend', htmlString15);
 
-            var clubsd3 = document.getElementById("description3");
+            var hotelsd3 = document.getElementById("description3");
             var htmlString151 = "";
-              htmlString151 += "<p>This club is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
-            clubsd3.insertAdjacentHTML('beforeend', htmlString151);
+              htmlString151 += "<p>This hotel is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
+            hotelsd3.insertAdjacentHTML('beforeend', htmlString151);
 
-            var clubs4 = document.getElementById("name4");
+            var hotels4 = document.getElementById("name4");
             var htmlString16 = data.results[3].name;
-            clubs4.insertAdjacentHTML('beforeend', htmlString16);
+            hotels4.insertAdjacentHTML('beforeend', htmlString16);
 
-            var clubs4 = document.getElementById("description4");
+            var hotels4 = document.getElementById("description4");
             var htmlString161 = "";
-              htmlString161 += "<p>This club is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
-            clubsd4.insertAdjacentHTML('beforeend', htmlString161);
+              htmlString161 += "<p>This hotel is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
+            hotelsd4.insertAdjacentHTML('beforeend', htmlString161);
             }
           })
         });
