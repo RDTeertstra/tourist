@@ -15,3 +15,27 @@ a {
 	margin-right: 100px;
 	margin-bottom: 100px;
 }
+
+body  {
+    background-image: url("contactus.jpg");
+    background-attachment: fixed;
+}
+
+.navbar {
+    color: white !important;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    z-index: 10;
+    width: 100%;
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("icon.png") !important;
+}
+
+#nav{
+  position: relative;
+  z-index:1001; /*navbar on top layer*/
+}
