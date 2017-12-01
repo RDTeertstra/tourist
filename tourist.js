@@ -11,6 +11,27 @@ $(() => {
     $("#news").append(" <b>Appended text</b>.");
   });
 
+  //Smoothscrolling
+
+  $("#userinput").click(function () {
+    $('html,body').animate({
+        scrollTop: $("#page2").offset().top},'slow');
+  });
+
+  $("#restaurantbutton").click(function () {
+    $('html,body').animate({
+        scrollTop: $("#items").offset().top},'slow');
+  });
+
+  $("#cafebutton").click(function () {
+      $('html,body').animate({
+          scrollTop: $("#items").offset().top},'slow');
+  });
+
+  $("#museumbutton").click(function () {
+      $('html,body').animate({
+          scrollTop: $("#items").offset().top},'slow');
+  });
 
 
   $("#restaurantbutton").on("click", () => {
