@@ -29,51 +29,76 @@
             </div>
         </nav>
 
-        <div id="s2">
-            <h1 class="User_city">What are you looking for?</h1>
-            <div id="buttons">
-                <input class="btn btn-primary" id="restaurantbutton" type="button" value="Restaurants">
-                <input class="btn btn-primary" id="cafebutton" type="submit" value="Cafés">
-                <input class="btn btn-primary" id="clubbutton" type="reset" value="Clubs">
+        <div id="index">
+            <img class="darken" src="darken.png">
+        
+            <div id="bg_vide" align="center">
+                <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                    <source src="australia.mp4" type="video/mp4">
+                </video>
+            </div>
+    
+            <div id="s1">
+                <div id="title">
+                    <h1>TOURIST GUIDE</h1>
+                </div>
+    
+                <div id="searchbar" class="input-group">
+                    <input type="text" class="form-control" name="term" id="autocomplete" placeholder="search location" aria-describedby="basic-addon2" value="" required>
+                    <span class="input-group-addon" id="userinput"><a href="page2.html">Search</a></span>
+                </div>
             </div>
         </div>
 
-        <div class="backgroundimg">
-            <img src="https://images.unsplash.com/photo-1503022932596-500eb8cca2d8?auto=format&fit=crop&w=700&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+        <div id="page2">
+            <div id="s2">
+                <h1 class="User_city">What are you looking for?</h1>
+                <div id="buttons">
+                    <input class="btn btn-primary" id="restaurantbutton" type="button" value="Restaurants">
+                    <input class="btn btn-primary" id="cafebutton" type="submit" value="Cafés">
+                    <input class="btn btn-primary" id="hotelbutton" type="reset" value="Hotels">
+                </div>
+            </div>
+    
+
+    
+            <div id="items">
+                <h2 class="changetitle" id="titlebutton"></h2>
+    
+                <div class="col-sm itemcards ">
+                    <h3 class="place_name" id="name1"></h3>
+                    </br>
+                    <p class="place_description" id="description1"></p>
+                </div>
+    
+                <div class="col-sm itemcards ">
+                    <h3 class="place_name" id="name2"></h3>
+                    </br>
+                    <p class="place_description" id="description2"></p>
+                </div>
+                <div class="col-sm itemcards ">
+                    <h3 class="place_name" id="name3"></h3>
+                    </br>
+                    <p class="place_description" id="description3"></p>
+                </div>
+    
+                <div class="col-sm itemcards ">
+                    <h3 class="place_name" id="name4"></h3>
+                    </br>
+                    <p class="place_description" id="description4"></p>
+                </div>
+            </div>
         </div>
 
-        <div id="items">
-            <h2 class="changetitle" id="titlebutton"></h2>
-
-            <div class="col-sm itemcards ">
-                <h3 class="place_name" id="name1"></h3>
-                </br>
-                <p class="place_description" id="description1"></p>
-            </div>
-
-            <div class="col-sm itemcards ">
-              <h3 class="place_name" id="name2"></h3>
-              </br>
-              <p class="place_description" id="description2"></p>
-            </div>
-            <div class="col-sm itemcards ">
-              <h3 class="place_name" id="name3"></h3>
-              </br>
-              <p class="place_description" id="description3"></p>
-            </div>
-
-            <div class="col-sm itemcards ">
-              <h3 class="place_name" id="name4"></h3>
-              </br>
-              <p class="place_description" id="description4"></p>
-            </div>
-
-        </div>
-
-      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script>
+          function activatePlacesSearch() {
+            var input = document.getElementById('autocomplete');
+            var autocompletes = new google.maps.places.Autocomplete(input);
+          }
+        </script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8kYERBj6C0BKhf80hpgKDCOVqVllOP0&libraries=places&callback=activatePlacesSearch"></script>
         <script src="tourist.js"></script>
     </body>
