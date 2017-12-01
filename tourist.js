@@ -14,103 +14,103 @@ $(() => {
       contentType: 'application/json; charset=UTF-8',
       data: {
         query: "paris",
-        key: "AIzaSyCWJZA2SqBF8AFk_GpwBtj3vTbNnlEUMsk",
+        key: "AIzaSyC58JA81ZluYN1WxVelklAOv7lOITKsj5o",
         types: "restaurant",
       },
       success: function (data) {
         var header = document.getElementById("titlebutton");
-        var htmlString5 = "Restaurants"
-        header.insertAdjacentHTML('beforeend', htmlString5);
+        var htmlString1 = "Restaurants"
+        header.insertAdjacentHTML('beforeend', htmlString1);
 
-        var restaurants1 = document.getElementById("restaurantname1");
-        var htmlString1 = data.results[0].name;
-        restaurants1.insertAdjacentHTML('beforeend', htmlString1);
+        var restaurants1 = document.getElementById("name1");
+        var htmlString2 = data.results[0].name;
+        restaurants1.insertAdjacentHTML('beforeend', htmlString2);
 
-        var restaurantsd1 = document.getElementById("restaurantdescription1");
-        var htmlString11 = "";
-          htmlString11 += "<p>This restaurant is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
-        restaurantsd1.insertAdjacentHTML('beforeend', htmlString11);
-
-        var restaurants2 = document.getElementById("restaurantname2");
-        var htmlString2 = data.results[1].name;
-        restaurants2.insertAdjacentHTML('beforeend', htmlString2);
-
-        var restaurantsd2 = document.getElementById("restaurantdescription2");
+        var restaurantsd1 = document.getElementById("description1");
         var htmlString21 = "";
-          htmlString21 += "<p>This restaurant is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
-        restaurantsd2.insertAdjacentHTML('beforeend', htmlString21);
+          htmlString21 += "<p>This restaurant is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
+        restaurantsd1.insertAdjacentHTML('beforeend', htmlString21);
 
-        var restaurants3 = document.getElementById("restaurantname3");
-        var htmlString3 = data.results[2].name;
-        restaurants3.insertAdjacentHTML('beforeend', htmlString31);
+        var restaurants2 = document.getElementById("name2");
+        var htmlString3 = data.results[1].name;
+        restaurants2.insertAdjacentHTML('beforeend', htmlString3);
 
-        var restaurantsd3 = document.getElementById("restaurantdescription3");
+        var restaurantsd2 = document.getElementById("description2");
         var htmlString31 = "";
-          htmlString31 += "<p>This restaurant is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
-        restaurantsd3.insertAdjacentHTML('beforeend', htmlString31);
+          htmlString31 += "<p>This restaurant is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
+        restaurantsd2.insertAdjacentHTML('beforeend', htmlString31);
 
-        var restaurants4 = document.getElementById("restaurantname4");
-        var htmlString4 = data.results[3].name;
-        restaurants4.insertAdjacentHTML('beforeend', htmlString4);
+        var restaurants3 = document.getElementById("name3");
+        var htmlString4 = data.results[2].name;
+        restaurants3.insertAdjacentHTML('beforeend', htmlString4);
 
-        var restaurantsd4 = document.getElementById("restaurantdescription4");
+        var restaurantsd3 = document.getElementById("description3");
         var htmlString41 = "";
-          htmlString41 += "<p>This restaurant is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
-        restaurantsd4.insertAdjacentHTML('beforeend', htmlString41);
+          htmlString41 += "<p>This restaurant is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
+        restaurantsd3.insertAdjacentHTML('beforeend', htmlString41);
+
+        var restaurants4 = document.getElementById("name4");
+        var htmlString5 = data.results[3].name;
+        restaurants4.insertAdjacentHTML('beforeend', htmlString5);
+
+        var restaurantsd4 = document.getElementById("description4");
+        var htmlString51 = "";
+          htmlString51 += "<p>This restaurant is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
+        restaurantsd4.insertAdjacentHTML('beforeend', htmlString51);
         }
       })
     });
 
-    $("#barbutton").on("click", () => {
+    $("#cafebutton").on("click", () => {
       $.ajax({
         url: 'https://maps.googleapis.com/maps/api/place/textsearch/json?',
         method: 'GET',
         contentType: 'application/json; charset=UTF-8',
         data: {
           query: "paris",
-          key: "AIzaSyCWJZA2SqBF8AFk_GpwBtj3vTbNnlEUMsk",
-          types: "bars",
+          key: "AIzaSyC58JA81ZluYN1WxVelklAOv7lOITKsj5o",
+          types: "cafe",
         },
         success: function (data) {
           var header = document.getElementById("titlebutton");
-          var htmlString7 = "Bars"
-          header.insertAdjacentHTML('beforeend', htmlString7);
+          var htmlString6 = "Cafés"
+          header.insertAdjacentHTML('beforeend', htmlString6);
 
-          var restaurants1 = document.getElementById("restaurantname1");
-          var htmlString1 = data.results[0].name;
-          restaurants1.insertAdjacentHTML('beforeend', htmlString1);
+          var bars1 = document.getElementById("name1");
+          var htmlString7 = data.results[0].name;
+          bars1.insertAdjacentHTML('beforeend', htmlString7);
 
-          var restaurantsd1 = document.getElementById("restaurantdescription1");
-          var htmlString11 = "";
-            htmlString11 += "<p>This bar is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
-          restaurantsd1.insertAdjacentHTML('beforeend', htmlString11);
+          var barsd1 = document.getElementById("description1");
+          var htmlString71 = "";
+            htmlString71 += "<p>This bar is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
+          barsd1.insertAdjacentHTML('beforeend', htmlString71);
 
-          var restaurants2 = document.getElementById("restaurantname2");
-          var htmlString2 = data.results[1].name;
-          restaurants2.insertAdjacentHTML('beforeend', htmlString2);
+          var bars2 = document.getElementById("name2");
+          var htmlString8 = data.results[1].name;
+          bars2.insertAdjacentHTML('beforeend', htmlString8);
 
-          var restaurantsd2 = document.getElementById("restaurantdescription2");
-          var htmlString21 = "";
-            htmlString21 += "<p>This bar is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
-          restaurantsd2.insertAdjacentHTML('beforeend', htmlString21);
+          var barsd2 = document.getElementById("description2");
+          var htmlString81 = "";
+            htmlString81 += "<p>This bar is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
+          barsd2.insertAdjacentHTML('beforeend', htmlString81);
 
-          var restaurants3 = document.getElementById("restaurantname3");
-          var htmlString3 = data.results[2].name;
-          restaurants3.insertAdjacentHTML('beforeend', htmlString31);
+          var bars3 = document.getElementById("name3");
+          var htmlString9 = data.results[2].name;
+          bars3.insertAdjacentHTML('beforeend', htmlString9);
 
-          var restaurantsd3 = document.getElementById("restaurantdescription3");
-          var htmlString31 = "";
-            htmlString31 += "<p>This bar is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
-          restaurantsd3.insertAdjacentHTML('beforeend', htmlString31);
+          var barsd3 = document.getElementById("description3");
+          var htmlString91 = "";
+            htmlString91 += "<p>This bar is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
+          barsd3.insertAdjacentHTML('beforeend', htmlString91);
 
-          var restaurants4 = document.getElementById("restaurantname4");
-          var htmlString4 = data.results[3].name;
-          restaurants4.insertAdjacentHTML('beforeend', htmlString4);
+          var bars4 = document.getElementById("name4");
+          var htmlString10 = data.results[3].name;
+          bars4.insertAdjacentHTML('beforeend', htmlString10);
 
-          var restaurantsd4 = document.getElementById("restaurantdescription4");
-          var htmlString41 = "";
-            htmlString41 += "<p>This bar is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
-          restaurantsd4.insertAdjacentHTML('beforeend', htmlString41);
+          var barsd4 = document.getElementById("description4");
+          var htmlString101 = "";
+            htmlString101 += "<p>This bar is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
+          barsd4.insertAdjacentHTML('beforeend', htmlString101);
           }
         })
       });
@@ -122,49 +122,49 @@ $(() => {
           contentType: 'application/json; charset=UTF-8',
           data: {
             query: "paris",
-            key: "AIzaSyCWJZA2SqBF8AFk_GpwBtj3vTbNnlEUMsk",
+            key: "AIzaSyC58JA81ZluYN1WxVelklAOv7lOITKsj5o",
             types: "clubs",
           },
           success: function (data) {
             var header = document.getElementById("titlebutton");
-            var htmlString7 = "Clubs"
-            header.insertAdjacentHTML('beforeend', htmlString7);
+            var htmlString12 = "Clubs"
+            header.insertAdjacentHTML('beforeend', htmlString12);
 
-            var restaurants1 = document.getElementById("restaurantname1");
-            var htmlString1 = data.results[0].name;
-            restaurants1.insertAdjacentHTML('beforeend', htmlString1);
+            var clubs1 = document.getElementById("name1");
+            var htmlString13 = data.results[0].name;
+            clubs1.insertAdjacentHTML('beforeend', htmlString13);
 
-            var restaurantsd1 = document.getElementById("restaurantdescription1");
-            var htmlString11 = "";
-              htmlString11 += "<p>This club is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
-            restaurantsd1.insertAdjacentHTML('beforeend', htmlString11);
+            var clubsd1 = document.getElementById("description1");
+            var htmlString131 = "";
+              htmlString131 += "<p>This club is located at " + data.results[0].formatted_address + ". It is rated a " + data.results[0].rating + " out of 5 by other travellers.</p>"
+            clubsd1.insertAdjacentHTML('beforeend', htmlString131);
 
-            var restaurants2 = document.getElementById("restaurantname2");
-            var htmlString2 = data.results[1].name;
-            restaurants2.insertAdjacentHTML('beforeend', htmlString2);
+            var clubs2 = document.getElementById("name2");
+            var htmlString14 = data.results[1].name;
+            clubss2.insertAdjacentHTML('beforeend', htmlString14);
 
-            var restaurantsd2 = document.getElementById("restaurantdescription2");
-            var htmlString21 = "";
-              htmlString21 += "<p>This club is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
-            restaurantsd2.insertAdjacentHTML('beforeend', htmlString21);
+            var clubsd2 = document.getElementById("description2");
+            var htmlString141 = "";
+              htmlString141 += "<p>This club is located at " + data.results[1].formatted_address + ". It is rated a " + data.results[1].rating + " out of 5 by other travellers.</p>"
+            clubsd2.insertAdjacentHTML('beforeend', htmlString141);
 
-            var restaurants3 = document.getElementById("restaurantname3");
-            var htmlString3 = data.results[2].name;
-            restaurants3.insertAdjacentHTML('beforeend', htmlString31);
+            var clubs3 = document.getElementById("name3");
+            var htmlString15 = data.results[2].name;
+            clubs3.insertAdjacentHTML('beforeend', htmlString15);
 
-            var restaurantsd3 = document.getElementById("restaurantdescription3");
-            var htmlString31 = "";
-              htmlString31 += "<p>This club is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
-            restaurantsd3.insertAdjacentHTML('beforeend', htmlString31);
+            var clubsd3 = document.getElementById("description3");
+            var htmlString151 = "";
+              htmlString151 += "<p>This club is located at " + data.results[2].formatted_address + ". It is rated a " + data.results[2].rating + " out of 5 by other travellers.</p>"
+            clubsd3.insertAdjacentHTML('beforeend', htmlString151);
 
-            var restaurants4 = document.getElementById("restaurantname4");
-            var htmlString4 = data.results[3].name;
-            restaurants4.insertAdjacentHTML('beforeend', htmlString4);
+            var clubs4 = document.getElementById("name4");
+            var htmlString16 = data.results[3].name;
+            clubs4.insertAdjacentHTML('beforeend', htmlString16);
 
-            var restaurantsd4 = document.getElementById("restaurantdescription4");
-            var htmlString41 = "";
-              htmlString41 += "<p>This club is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
-            restaurantsd4.insertAdjacentHTML('beforeend', htmlString41);
+            var clubs4 = document.getElementById("description4");
+            var htmlString161 = "";
+              htmlString161 += "<p>This club is located at " + data.results[3].formatted_address + ". It is rated a " + data.results[3].rating + " out of 5 by other travellers.</p>"
+            clubsd4.insertAdjacentHTML('beforeend', htmlString161);
             }
           })
         });
