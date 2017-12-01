@@ -16,6 +16,17 @@ a {
 	margin-bottom: 100px;
 }
 
+#jumbo{
+    background-image: url("members.jpg") !important;
+    background-attachment: relative;
+    margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
 body  {
     background-image: url("contactus.jpg");
     background-attachment: fixed;
