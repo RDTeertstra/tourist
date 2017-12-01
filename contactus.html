@@ -9,10 +9,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="styles2.css"/>
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <script>
-            $(document).ready(function(){
-			});
-        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8kYERBj6C0BKhf80hpgKDCOVqVllOP0&libraries=places&callback=activatePlacesSearch"></script>
+        <script src="tourist.js"></script>
+        
     </head>
 
     <body>
@@ -35,7 +37,7 @@
   			<h1 class="display-3">Travel the world with us!</h1>
   			<p class="lead">Unlock unlimited benefits by being part of our growing community.</p>
   			<hr class="my-2">
-  			<p> Not convinced yet? </p>
+  			<p> Not convinced yet? Learn about the various discounts and offers that we can offer you through our worldwide partners. </p>
   			<p class="lead">
     			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
   			</p>
@@ -56,14 +58,10 @@
     			<label for="inputAddress">Address</label>
     			<input type="text" class="form-control" id="inputAddress" placeholder="Burgemeester Oudlaan 50, 3062PA">
   			</div>
-  			<div class="form-group">
-    			<label for="inputCity">City</label>
-    			<input type="text" class="form-control" id="inputAddress2" placeholder="Rotterdam">
-  			</div>
   			<div class="form-row">
     			<div class="form-group col-md-6">
-      				<label for="inputCity">Nationality</label>
-      				<input type="text" class="form-control" id="inputCity" placeholder="Dutch">
+      				<label for="inputCity">City</label>
+      				<input type="text" class="form-control" id="inputCity" placeholder="Rotterdam">
     			</div>
     			<div class="form-group col-md-4">
       				<label for="inputState">Gender</label>
@@ -77,7 +75,22 @@
       				<label for="inputZip">Age</label>
       				<input type="text" class="form-control" id="inputZip" placeholder="...">
     			</div>
-  			</div>
+    			
+    			<div class="form-group col-md-6">
+    				<label for="inputContinent">Where would you like to travel?</label>
+    				<select id="inputContinent" class="form-control" placeholder="Europe">
+    					<option>...</option>
+    					<option>Africa</option>
+    					<option>Antartica</option>
+    					<option>Asia</option>
+    					<option>Australia</option>
+    					<option>Europe</option>
+    					<option>South America</option>
+    					<option>North America</option>
+    				</select>
+    			</div>
+    		</div>
+
   			<div class="form-group">
     			<div class="form-check">
       				<label class="form-check-label">
@@ -85,15 +98,31 @@
       				</label>
     			</div>
   			</div>
-  			<button type="submit" class="btn btn-primary">Sign in</button>
+
+  			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  				Sign up
+			</button>
+
+			<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<h5 class="modal-title" id="exampleModalLongTitle">Awesome!</h5>
+        					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          						<span aria-hidden="true">&times;</span>
+        					</button>
+      					</div>
+      					<div class="modal-body">
+        					Thank you for signing up. Your request has been processed correctly. From now on, we will guide you through you most desired travel destinations.
+      					</div>
+      					<div class="modal-footer">
+        					<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      					</div>
+    				</div>
+  				</div>
+			</div>
+
 		</form>
 	</body>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm8kYERBj6C0BKhf80hpgKDCOVqVllOP0&libraries=places&callback=activatePlacesSearch"></script>
-    <script src="tourist.js"></script>
-
 
 </html>
