@@ -165,7 +165,7 @@ $(() => {
 
             var museums4 = document.getElementById("name4");
             var htmlString16 = data.results[3].name;
-            hotels4.insertAdjacentHTML('beforeend', htmlString16);
+            museums4.insertAdjacentHTML('beforeend', htmlString16);
 
             var museumsd4 = document.getElementById("description4");
             var htmlString161 = "";
