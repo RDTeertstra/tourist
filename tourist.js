@@ -34,6 +34,10 @@ $(() => {
           scrollTop: $("#items").offset().top},'slow');
   });
 
+// prevent XSS Injection
+function htmlEntities(str) {
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
 
   $("#restaurantbutton").on("click", () => {
     $.ajax({
@@ -173,7 +177,7 @@ $(() => {
           },
           success: function (data) {
             document.getElementById("titlebutton").innerHTML = "";
-            var header = document.getElementById("titlebutton");
+            var header = htmlEntities(document.getElementById("titlebutton"));
             var htmlString12 = "Museums"
             header.insertAdjacentHTML('beforeend', htmlString12);
 
